@@ -104,7 +104,7 @@ import { UserContext } from "../../context/UserContext";
             value={fullName}
             onChange={({target})=>setFullName(target.value)}
             label="Full Name"
-            placeholder="Nikhil"
+            placeholder="Soniya"
             type="text"
             required
             />
@@ -112,7 +112,7 @@ import { UserContext } from "../../context/UserContext";
               value={email}
               onChange={({target}) => setEmail(target.value)}
               label="Email Address"
-              placeholder="Nikhil@example.com"
+              placeholder="soniya@example.com"
               type="email"
               required
             />

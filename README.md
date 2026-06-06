@@ -1,4 +1,4 @@
-# 💰 Expense Tracker
+# 💰 ExpenseIQ
 
 A full-stack web application for managing personal income and expenses with detailed analytics and insights.
 
@@ -225,7 +225,7 @@ This project is licensed under the MIT License.
 
 ## 👨‍💻 Author
 
-**Nikhil Kumar Das**
+**Soniya Joshi**
 
 ## 🙏 Acknowledgments
 

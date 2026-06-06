@@ -6,14 +6,88 @@
     --color-primary:#875cf5;
 }
 @layer base{
+    :root {
+      --theme-bg: #f9fafb;
+      --theme-card-bg: #ffffff;
+      --theme-text: #1f2937;
+      --theme-text-muted: #4b5563;
+      --theme-border: #e5e7eb;
+      --theme-input-bg: #f3f4f6;
+      --theme-input-text: #1f2937;
+    }
+
+    .theme-light {
+      --theme-bg: #f9fafb;
+      --theme-card-bg: #ffffff;
+      --theme-text: #1f2937;
+      --theme-text-muted: #4b5563;
+      --theme-border: #e5e7eb;
+      --theme-input-bg: #f3f4f6;
+      --theme-input-text: #1f2937;
+    }
+
+    .theme-butter-yellow {
+      --theme-bg: #fefce8;
+      --theme-card-bg: #fffbeb;
+      --theme-text: #78350f;
+      --theme-text-muted: #b45309;
+      --theme-border: #fef08a;
+      --theme-input-bg: #fef9c3;
+      --theme-input-text: #78350f;
+    }
+
+    .theme-dark {
+      --theme-bg: #0f172a;
+      --theme-card-bg: #1e293b;
+      --theme-text: #f8fafc;
+      --theme-text-muted: #94a3b8;
+      --theme-border: #334155;
+      --theme-input-bg: #0f172a;
+      --theme-input-text: #f8fafc;
+    }
+
+    .theme-light-blue {
+      --theme-bg: #f0f9ff;
+      --theme-card-bg: #ffffff;
+      --theme-text: #0c4a6e;
+      --theme-text-muted: #0284c7;
+      --theme-border: #bae6fd;
+      --theme-input-bg: #e0f2fe;
+      --theme-input-text: #0c4a6e;
+    }
+
     html{
         font-family: var(--font-display);
-
     }
     body{
-        background-color:#fcfbfc;
+        background-color: var(--theme-bg);
+        color: var(--theme-text);
         overflow-x: hidden;
+        transition: background-color 0.2s ease, color 0.2s ease;
     }
+}
+
+/* Theme Helper Classes */
+.bg-theme-bg {
+  background-color: var(--theme-bg);
+}
+.bg-theme-card {
+  background-color: var(--theme-card-bg);
+}
+.text-theme-main {
+  color: var(--theme-text);
+}
+.text-theme-muted {
+  color: var(--theme-text-muted);
+}
+.border-theme-border {
+  border-color: var(--theme-border);
+}
+.bg-theme-input {
+  background-color: var(--theme-input-bg);
+}
+.text-theme-input {
+  color: var(--theme-input-text);
 }
 .input-box{
     @apply w-full flex justify-between gap-3 text-sm text-black bg-slate-100 rounded px-4 mb-4 mt-3 border border-slate-200 outline-none;

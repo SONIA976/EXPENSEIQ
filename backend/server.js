@@ -27,7 +27,7 @@ connectDB();
 // Basic route for testing
 app.get('/', (req, res) => {
   res.json({ 
-    message: 'Expense Tracker API is running!',
+    message: 'ExpenseIQ API is running!',
     status: 'success',
     timestamp: new Date().toISOString()
   });

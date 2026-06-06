@@ -28,9 +28,9 @@ const SideMenu = ({ activeMenu }) => {
 
   return (
     <>
-      <div className="w-64 bg-white shadow-sm border-r border-gray-200 min-h-screen flex flex-col">
+      <div className="w-64 bg-theme-card shadow-sm border-r border-theme-border min-h-screen flex flex-col transition-colors duration-200">
         {/* App Header with Logo */}
-        <div className="p-6 border-b border-gray-200">
+        <div className="p-6 border-b border-theme-border">
           <div className="flex items-center space-x-3 mb-6">
             <div className="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center">
               <svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -41,12 +41,12 @@ const SideMenu = ({ activeMenu }) => {
                 <text x="16" y="19" textAnchor="middle" fill="white" fontFamily="Arial, sans-serif" fontSize="8" fontWeight="bold">₹</text>
               </svg>
             </div>
-            <h3 className="text-lg font-semibold text-gray-800">Expense Tracker</h3>
+            <h3 className="text-lg font-semibold text-theme-main">ExpenseIQ</h3>
           </div>
         </div>
 
         {/* User Profile Section */}
-        <div className="p-6 border-b border-gray-200">
+        <div className="p-6 border-b border-theme-border">
           <div className="flex items-center space-x-4 mb-6">
             {user?.profilePhoto ? (
               <img 
@@ -66,10 +66,10 @@ const SideMenu = ({ activeMenu }) => {
               </div>
             )}
             <div className="flex-1 min-w-0">
-              <h3 className="text-sm font-semibold text-gray-800 truncate">
+              <h3 className="text-sm font-semibold text-theme-main truncate">
                 {user?.fullName || 'User'}
               </h3>
-              <p className="text-xs text-gray-500 truncate">
+              <p className="text-xs text-theme-muted truncate">
                 {user?.email || 'user@example.com'}
               </p>
             </div>
@@ -88,7 +88,7 @@ const SideMenu = ({ activeMenu }) => {
 
         {/* Menu Items */}
         <div className="flex-1 p-6">
-          <h2 className="text-lg font-semibold text-gray-800 mb-6">Menu</h2>
+          <h2 className="text-lg font-semibold text-theme-main mb-6">Menu</h2>
           
           <nav className="space-y-2">
             {menuItems.map((item) => (
@@ -98,7 +98,7 @@ const SideMenu = ({ activeMenu }) => {
                 className={`flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors ${
                   location.pathname === item.path
                     ? 'bg-purple-100 text-purple-700 border-r-2 border-purple-600'
-                    : 'text-gray-600 hover:bg-gray-50 hover:text-gray-800'
+                    : 'text-theme-muted hover:bg-theme-bg hover:text-theme-main'
                 }`}
               >
                 <span className="text-lg">{item.icon}</span>

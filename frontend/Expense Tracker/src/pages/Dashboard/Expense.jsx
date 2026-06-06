@@ -96,7 +96,7 @@ const Expense = () => {
     <DashboardLayout activeMenu="Expense">
       <div className="my-5 mx-auto">
         <div className="mb-6">
-          <h1 className="text-2xl font-bold text-gray-800">Expense Management           cd "/Users/nikhilkumardas/Desktop/Expense Tracker/frontend/Expense Tracker"</h1>
+          <h1 className="text-2xl font-bold text-gray-800">Expense Management</h1>
           <p className="text-gray-600 mt-2">
             Track and manage your expenses with detailed analytics and insights.
           </p>

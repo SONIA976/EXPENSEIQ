@@ -20,7 +20,7 @@ const DashboardLayout = ({ children, activeMenu }) => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-theme-bg transition-colors duration-200">
       {/* Navbar */}
       <Navbar activeMenu={activeMenu} />
 

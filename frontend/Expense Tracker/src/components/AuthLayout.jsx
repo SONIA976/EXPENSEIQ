@@ -16,7 +16,7 @@ const AuthLayout = ({children} ) => {
             <text x="16" y="19" textAnchor="middle" fill="white" fontFamily="Arial, sans-serif" fontSize="8" fontWeight="bold">₹</text>
           </svg>
         </div>
-        <h2 className='text-2xl font-bold text-black'>Expense Tracker</h2>
+        <h2 className='text-2xl font-bold text-black'>ExpenseIQ</h2>
       </div>
       {children}
     </div>
